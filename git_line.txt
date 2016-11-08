@@ -23,4 +23,11 @@ git commit -m "修改标注"
 5.查看目前状态
 git status
 
+6.查看与上次提交的差异
+git diff 文件名
+
+7.查看提交的日志
+git log 
+或者按条线格式
+git log --pretty=oneline
   
