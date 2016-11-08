@@ -31,3 +31,5 @@ git log
 或者按条线格式
 git log --pretty=oneline
   
+8.test id kankan 
+this is test
