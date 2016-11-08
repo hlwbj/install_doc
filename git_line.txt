@@ -12,4 +12,15 @@ $ git config --global user.email "email@example.com"
   git config user.name
   
 3.创建一个库
+  mkdir 目录名(库名)
+  cd 目录名(库名)
+  git init  
+  
+4.将文件添加到版本库
+git add 文件名
+git commit -m "修改标注"
+  
+5.查看目前状态
+git status
+
   
