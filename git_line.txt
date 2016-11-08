@@ -50,3 +50,22 @@ git checkout -- filename
       git commit -m ""
 取消：git checkout -- filename
 
+13.远程仓库的配置
+第1步：创建SSH Key。在用户主目录下（Windows c:\用户\用户名，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，
+        如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+		ssh-keygen -t rsa -C "youremail@example.com"
+		可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件
+第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+
+然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
+
+14.本地与远程库关联
+   以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到GitHub仓库。
+   git remote add origin git@github.com:github账号/库名称.git
+   origin 远程仓库的名称，可可以改成别的
+   
+15.查看远程库详细列表
+   git remote -v
+   
+16.本地库的所有内容推送到远程库上
+   git push -u origin master  #origin 远程仓库的名称
