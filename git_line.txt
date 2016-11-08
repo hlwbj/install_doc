@@ -41,4 +41,12 @@ git reflog
 10.文件做了修改，但未提交，也为git add，可以取消修改
 git checkout -- filename
 
+11.文件做了修改，提交到了git add 暂存区，但没有提交
+首先：git reset HEAD filename   #也可以把暂存区的修改回退到工作区
+然后：git checkout -- filename
+
+12.删除文件后，两种情况确认或取消
+确认：git rm filename
+      git commit -m ""
+取消：git checkout -- filename
 
