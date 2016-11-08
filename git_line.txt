@@ -31,5 +31,9 @@ git log
 或者按条线格式
 git log --pretty=oneline
   
-8.test id kankan 
-this is test
+8.回退提交过的版本 
+git reset --hard HEAD^  #回退到最近一次提交的版本
+git reset --hard 3628164(版本号)
+
+9.查看回退过的版本号
+git reflog
